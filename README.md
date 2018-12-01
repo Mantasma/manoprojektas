@@ -15,7 +15,7 @@
 
 2.2.1. atsiranda vienas iš 6 skirtingų Lietuvos teritorijos vaizdų, kuris yra suskirstytas kvadratais, kiekvienas kvadratas yra aktyvus pažymėti.
 
-2.2.2. pažymėjus vieną kvadratą atsiranda galimybė parašyti skaičių (t.y kiek tos teritorijos žemėlapių reikės. pvz: 1 vnt. ar 10 vnt.).
+2.2.2. pažymėjus vieną kvadratą atsiranda galimybė parašyti skaičių (t.y kiek tos teritorijos žemėlapių reikės. pvz. 1 vnt. ar 10 vnt.).
 
 2.2.3. pažymėjus kvadratėlį bei parašius vnt. skaičių tas kvadratėlis tampa pažymėtas ir atsiranda galimybė pasirinkti bei pažymėti kitą kvadratėlį arba baigti žymėjimą ir pereiti prie sekančio etapo.
 
