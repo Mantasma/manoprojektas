@@ -26,5 +26,5 @@
 
 2.2.7. baigus užsakymą vartotojas gautų pasirinkimą parsisiųsti excel, kuriame būtų visas jo užsakymas.
 *********
-3. užsakymas turi nueiti į duomenų bazę (pvz. sql serverį).
+3. užsakymas turi nueiti į duomenų bazę.
 4. galimybė gauti viename excel kiekvieno vartotojo užsakymą bei jų sumą.
