@@ -2,6 +2,7 @@
 sukurti naršyklę - standartinių žemėlapių metinis dalinio poreikis.
 
 1. vartotojo prisijungimas
+
 2.1. aplinka, kurioje pasirenkami 6 galimi masteliai:
 - 10 000
 - 20 000
