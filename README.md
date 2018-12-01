@@ -1,8 +1,8 @@
 # manoprojektas
-sukurti naršyklę - standartinių žemėlapių metinis dalinio poreikis.
+## sukurti naršyklę - standartinių žemėlapių metinis dalinio poreikis.
 
 1. vartotojo prisijungimas
-
+*********
 2.1. aplinka, kurioje pasirenkami 6 galimi masteliai:
 - 10 000
 - 20 000
@@ -25,6 +25,6 @@ sukurti naršyklę - standartinių žemėlapių metinis dalinio poreikis.
 2.2.6. baigus mastelių žymėjimus būtų galimybė įvesti papildomus laukus ar pastabas.
 
 2.2.7. baigus užsakymą vartotojas gautų pasirinkimą parsisiųsti excel, kuriame būtų visas jo užsakymas.
-
+*********
 3. užsakymas turi nueiti į duomenų bazę (pvz. sql serverį).
 4. galimybė gauti viename excel kiekvieno vartotojo užsakymą bei jų sumą.
