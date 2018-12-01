@@ -1,5 +1,5 @@
 # manoprojektas
-## sukurti naršyklę - standartinių žemėlapių metinis dalinio poreikis.
+## sukurti naršyklę - standartinių žemėlapių metinis poreikis.
 
 1. vartotojo prisijungimas
 *********
