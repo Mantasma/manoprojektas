@@ -1,6 +1,14 @@
 from flask import Flask, redirect, url_for, request
 app = Flask(__name__)
 
+import sqlalchemy as db
+
+import sqlite3
+
+from sqlite3 import Error
+
+conn = sqlite3.connect('db22.sqlite')
+
 @app.route('/')
 def home():
    return "sveiki vartotojau"
@@ -8,7 +16,7 @@ def home():
 @app.route('/maps/<mastelis>/<nomenklatura>')
 def success(mastelis,nomenklatura):
    # irasyti i teksta faila
-   irasas= open('atsakymas2.txt','w')
+   irasas= open('atsakymas2.txt','a')
    irasas.write(mastelis)
    irasas.close()
    return 'welcome %s' % mastelis
