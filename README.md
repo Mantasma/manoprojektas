@@ -4,4 +4,4 @@
 1. python kodas turi sukurti serverį ir įrašant užklausas įrašyti txt. failą.
 
 *********
-2. Taip pat susikuria sql duomenų bazė.
+2. Taip pat sukurti sql duomenų bazę.
