@@ -5,7 +5,6 @@ import sqlite3
 
 from sqlite3 import Error
 
-conn = sqlite3.connect('db17.sqlite')
 
 @app.route('/')
 def home():
@@ -18,12 +17,18 @@ def success(mastelis,nomenklatura,kiekis):
    irasas.write(mastelis)
    irasas.close()
 
-   conn.execute("""INSERT INTO projects(mastelis, nomenklatura, kiekis) VALUES(?, ?, ?)""", (1,2,3))
+   
+   conn = sqlite3.connect('db21.sqlite')
 
+   conn.execute('''
+
+CREATE TABLE IF NOT EXISTS projects (
+id integer PRIMARY KEY,
+mastelis number NOT NULL,
+nomenklatura text,
+kiekis number);''')
 
    return 'welcome %s' % mastelis
-
-
 
 if __name__ == '__main__':
    app.run(port=5001,debug = True)
