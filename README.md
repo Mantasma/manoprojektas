@@ -10,3 +10,7 @@ naudojama python 3.7 versija.
 
 ## instaliavimas
 pip install -r Flask_requirements.txt
+
+## naudojimas
+1. create_table.py - sukuriama sqlite duomenų bazė.
+2. maps_requests_for_api.py - sukuriamas flask serveris ir įrašoma užklausa į duomenų bazę.
