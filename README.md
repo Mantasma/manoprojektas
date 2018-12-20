@@ -6,7 +6,7 @@
 2. Taip pat įrašyti užklausą į sql duomenų bazę.
 
 *********
-## naudojama python 3.7 versija.
+naudojama python 3.7 versija.
 
 ## instaliavimas
 pip install -r Flask_requirements.txt
