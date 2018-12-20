@@ -1,10 +1,10 @@
 from flask import Flask, redirect, url_for, request
-app = Flask(__name__)
 
 import sqlite3
 
 from sqlite3 import Error
 
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -16,17 +16,19 @@ def success(mastelis,nomenklatura,kiekis):
    irasas= open('atsakymas2.txt','a')
    irasas.write(mastelis)
    irasas.close()
-
    
-   conn = sqlite3.connect('db21.sqlite')
+   conn = sqlite3.connect('db23.sqlite')
 
-   conn.execute('''
+   conn = conn.cursor()
 
-CREATE TABLE IF NOT EXISTS projects (
-id integer PRIMARY KEY,
-mastelis number NOT NULL,
-nomenklatura text,
-kiekis number);''')
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-5", 5))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-6", 5))
+
+   conn.execute('''SELECT * FROM projects''')
+
+   data = conn.fetchall()
+
+   print (data)
 
    return 'welcome %s' % mastelis
 
