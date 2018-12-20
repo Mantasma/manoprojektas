@@ -22,7 +22,7 @@ def success(mastelis,nomenklatura,kiekis):
    conn = conn.cursor()
 
    conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-5", 5))
-   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-6", 5))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-7", 5))
 
    conn.execute('''SELECT * FROM projects''')
 
