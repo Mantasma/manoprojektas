@@ -2,7 +2,7 @@ import sqlite3
 
 from sqlite3 import Error
 
-conn = sqlite3.connect('db24.sqlite')
+conn = sqlite3.connect('db1.sqlite')
 
 c = conn.cursor()
 

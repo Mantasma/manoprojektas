@@ -12,17 +12,20 @@ def home():
 
 @app.route('/maps/<mastelis>/<nomenklatura>/<kiekis>/')
 def success(mastelis,nomenklatura,kiekis):
-   # irasyti i teksta faila
-   irasas= open('atsakymas2.txt','a')
+   # parsisiunciamas irasas txt formatu
+   irasas= open('atsakymas.txt','a')
    irasas.write(mastelis)
    irasas.close()
    
-   conn = sqlite3.connect('db23.sqlite')
+   conn = sqlite3.connect('db1.sqlite')
 
    conn = conn.cursor()
 
-   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-5", 5))
-   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (1000, "N-7", 5))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (10000, "N-5", 5))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (20000, "N-7", 20))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (25000, "N-14", 3))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (100000, "N-21", 1))
+   conn.execute('''INSERT INTO projects(mastelis, nomenklatura,kiekis) VALUES(?, ?, ?)''', (250000, "N-15", 7))
 
    conn.execute('''SELECT * FROM projects''')
 
