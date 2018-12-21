@@ -9,7 +9,7 @@
 naudojama python 3.7 versija.
 
 ## instaliavimas
-pip install -r Flask_requirements.txt
+pip install -r requirements.txt
 
 ## naudojimas
 1. create_table.py - sukuriama sqlite duomenų bazė.
